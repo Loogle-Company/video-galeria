@@ -1,0 +1,290 @@
+
+  
+  @media only screen and (max-width: 1440px) {
+  
+    header{
+      width: 100%;
+      height: 8vh;
+      padding-left:1.5%;
+      position: fixed;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #333;
+      font-size: 0.7rem;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 2.5%;
+    }
+    
+    header h3{
+      display: none;
+    }
+    
+    .container {
+      display: flex;
+      gap: 2%;
+      background-color:none;
+      height: 92vh;
+      width:100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 1%;
+      padding-bottom: 3%;
+    }
+    
+    .main-video-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    
+    }
+    
+    .main-video-content video {
+      height: 100%;
+      width: 100%;
+    }
+    
+    .playlist {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      overflow: auto;
+      max-height: 90vh;
+      padding: 2px;
+      min-height: 10vh;
+      width: 40%;
+    }
+    
+    .playlist::-webkit-scrollbar {
+      width: 100%;
+    }
+    .playlist::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: gray; 
+    }
+    
+    .playlist-video {
+      display: flex;
+      align-items: center;
+      padding: 2%;
+      border: 1.5px solid rgb(66, 66, 66);
+      cursor: pointer;
+      background-color: white;
+    }
+    
+    .playlist-video-info {
+      font-size: 16px;       /* Tamanho da fonte */
+      color: #272727;        /* Cor do texto */
+      padding-left: 10%;
+      border-radius: 5px;    /* Bordas arredondadas */
+      margin-top: 5px;       /* Espaço acima do título */
+      display: block;        /* Garante que o título ocupe a própria linha */
+      width: 100%;           /* Ocupa toda a largura do contêiner do vídeo */
+    }
+    
+    /* Estilo para o item ativo para destacar o vídeo atual */
+    .active .playlist-video-info {
+      color: #ff0000;          /* Cor do texto para o vídeo ativo */
+    }
+    
+    
+    .playlist-video video{
+      width: 40%;
+      border: 1px solid rgba(63, 63, 63, 0.507);
+      border-radius: 3px;
+    }  
+  }
+  
+  
+  @media only screen and (max-width: 1280px) {
+  
+    header{
+      width: 100%;
+      height: 8vh;
+      padding-left:1.5%;
+      position: fixed;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #333;
+      font-size: 0.7rem;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 2.5%;
+    }
+    
+    header h3{
+      display: none;
+    }
+    
+    .container {
+      display: flex;
+      gap: 2%;
+      background-color:none;
+      height: 92vh;
+      width:100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 1%;
+      padding-bottom: 3%;
+    }
+    
+    .main-video-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    
+    }
+    
+    .main-video-content video {
+      height: 100%;
+      width: 100%;
+    }
+    
+    .playlist {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      overflow: auto;
+      max-height: 90vh;
+      padding: 2px;
+      min-height: 10vh;
+      width: 40%;
+    }
+    
+    .playlist::-webkit-scrollbar {
+      width: 100%;
+    }
+    .playlist::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: gray; 
+    }
+    
+    .playlist-video {
+      display: flex;
+      align-items: center;
+      padding: 2%;
+      border: 1.5px solid rgb(66, 66, 66);
+      cursor: pointer;
+      background-color: white;
+    }
+    
+    .playlist-video-info {
+      font-size: 16px;       /* Tamanho da fonte */
+      color: #272727;        /* Cor do texto */
+      padding-left: 10%;
+      border-radius: 5px;    /* Bordas arredondadas */
+      margin-top: 5px;       /* Espaço acima do título */
+      display: block;        /* Garante que o título ocupe a própria linha */
+      width: 100%;           /* Ocupa toda a largura do contêiner do vídeo */
+    }
+    
+    /* Estilo para o item ativo para destacar o vídeo atual */
+    .active .playlist-video-info {
+      color: #ff0000;          /* Cor do texto para o vídeo ativo */
+    }
+    
+    
+    .playlist-video video{
+      width: 40%;
+      border: 1px solid rgba(63, 63, 63, 0.507);
+      border-radius: 3px;
+    }  
+  }
+  
+@media only screen and (max-width: 900px) {
+    header{
+      width: 100%;
+      height: auto;
+      min-height: 8vh;
+      max-height: 15vh;
+      padding-left:2%;
+      position: fixed;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #333;
+      font-size: 1rem;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 0%;
+      order: 1;
+    }
+  
+    header h1, h2{
+      display: none;
+    }
+  
+    header h3{
+      display: block;
+    }
+    
+    .container {
+      display: flex;
+      gap: 2%;
+      background-color:none;
+      height: 85vh;
+      width:100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding-bottom: 3%;
+      order: 2;
+      top: 1%;
+      padding: 0;
+      flex-direction: column;
+      margin-top: 60px;
+      height: -webkit-fill-available;
+    }
+  
+    .main-video-content {
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+      width: 100%;
+      height: 100%;  
+  
+    }
+    
+    .main-video-content video {
+      height: 100%; 
+      width: 100%;
+    }
+  
+    .playlist {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      overflow: auto;
+      max-height: 100vh;
+      padding: 2px;
+      min-height: 10vh;
+      width: 97%;
+      position: relative;
+      order: 2;
+      padding-top: 4%;
+      order: 4;
+      margin-bottom: 5%;
+    }
+  
+    .playlist-video {
+      display: flex;
+      align-items: center;
+      padding: 2%;
+      border: 1.5px solid rgb(66, 66, 66);
+      cursor: pointer;
+      background-color: white;
+      order: 3;
+    }
+  
+    .playlist-video-info {
+      font-size: 1.3rem;       /* Tamanho da fonte */
+      color: #272727;        /* Cor do texto */
+      padding-left: 10%;
+      border-radius: 5px;    /* Bordas arredondadas */
+      margin-top: 5px;       /* Espaço acima do título */
+      display: block;        /* Garante que o título ocupe a própria linha */
+      width: 100%;           /* Ocupa toda a largura do contêiner do vídeo */
+    }
+    
+  }

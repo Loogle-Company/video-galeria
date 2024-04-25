@@ -1,50 +1,51 @@
 export default [
   {
     src: "./img/08.mp4",
-    title: "EPISÓDIO 1",
+    title: "PASSO 1",
   },
   {
     src: "./img/02.mp4",
-    title: "Live Stream",
+    title: "PASSO 2",
   },
   {
     src: "./img/03.mp4",
-    title: "Digitando",
+    title: "PASSO 3",
   },
   {
     src: "./img/04.mp4",
-    title: "Home office",
+    title: "PASSO 4",
   },
   {
     src: "./img/05.mp4",
-    title: "Likes",
+    title: "PASSO 5",
   },
   {
     src: "./img/06.mp4",
-    title: "Gota de água",
+    title: "PASSO 6",
   },
   {
     src: "./img/07.mp4",
-    title: "Código",
+    title: "PASSO 7",
   },
   {
     src: "./img/03.mp4",
-    title: "Digitando",
+    title: "PASSO 8",
   },
   {
     src: "./img/04.mp4",
-    title: "Home office",
+    title: "PASSO 9",
   },
   {
     src: "./img/05.mp4",
-    title: "Likes",
+    title: "PASSO 10",
   },
   {
     src: "./img/06.mp4",
-    title: "Gota de água",
+    title: "PASSO 11",
   },
   {
     src: "./img/07.mp4",
-    title: "Código",
+    title: "PASSO 12",
   },
+  
 ];

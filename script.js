@@ -43,3 +43,14 @@ function setVideo(video_main, item) {
 }
 
 loadVideos();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var video = document.getElementById('meuVideo');
+  video.pause(); // Garante que o vídeo esteja pausado ao carregar a página
+
+  var botaoPausar = document.getElementById('botaoPausar');
+  botaoPausar.addEventListener('click', function() {
+    video.pause(); // Pausa o vídeo quando o botão é clicado
+  });
+});

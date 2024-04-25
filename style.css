@@ -10,28 +10,50 @@ body {
   display: flex;
   height: 100vh;
   width: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+header{
+  width: 100%;
+  height: 8vh;
+  padding-left:1.5%;
+  position: fixed;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #333;
+  font-size: 0.7rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2.5%;
+}
+
+header h3{
+  display: none;
 }
 
 .container {
   display: flex;
   gap: 2%;
-  margin: 20px 10px;
   background-color:none;
-  padding: 10px;
-  height: 90vh;
-  width: 100%;
+  height: 92vh;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1%;
+  padding-bottom: 3%;
 }
 
 .main-video-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 10px;
 
 }
 
 .main-video-content video {
-  height: 95%;
+  height: 100%;
   width: 100%;
 }
 
@@ -40,7 +62,7 @@ body {
   flex-direction: column;
   gap: 10px;
   overflow: auto;
-  max-height: 82.7vh;
+  max-height: 90vh;
   padding: 2px;
   min-height: 10vh;
   width: 20%;
@@ -57,30 +79,30 @@ body {
 .playlist-video {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 0;
-  border: 1px solid rgba(63, 63, 63, 0.507);
-  margin-right: 5px;
+  padding: 2%;
+  border: 1.5px solid rgb(66, 66, 66);
   cursor: pointer;
+  background-color: white;
 }
 
-.active {
-  background-color: white;
-  color: black;
+.playlist-video-info {
+  font-size: 16px;       /* Tamanho da fonte */
+  color: #272727;        /* Cor do texto */
+  padding-left: 10%;
+  border-radius: 5px;    /* Bordas arredondadas */
+  margin-top: 5px;       /* Espaço acima do título */
+  display: block;        /* Garante que o título ocupe a própria linha */
+  width: 100%;           /* Ocupa toda a largura do contêiner do vídeo */
 }
+
+/* Estilo para o item ativo para destacar o vídeo atual */
+.active .playlist-video-info {
+  color: #ff0000;          /* Cor do texto para o vídeo ativo */
+}
+
 
 .playlist-video video{
   width: 40%;
-}
-
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-    margin-top: 60px;
-    height: -webkit-fill-available;
-  }
-
-  .container, .main-video-content video {
-    width: 100%;
-  }
+  border: 1px solid rgba(63, 63, 63, 0.507);
+  border-radius: 3px;
 }
